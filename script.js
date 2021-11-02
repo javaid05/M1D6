@@ -19,3 +19,19 @@ changeAddress.onclick = function () {
 };
 
 //EX10: Write a function to add a CSS class to every Amazon link
+let addLinkClass = document.getElementById("add-links-class");
+addLinkClass.onclick = function () {
+  let links = document.getElementsByTagName("a");
+  for (let link of links) {
+    link.classList.add("links-class");
+  }
+};
+
+//EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+let toggleImgs = document.getElementById("toggle-img");
+toggleImgs.onclick = function () {
+  let images = document.getElementsByTagName("img");
+  for (let img of images) {
+    img.classList.toggle("toggling-image");
+  }
+};
