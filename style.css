@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+table {
+  max-width: 80%;
+}
+
+.product-image {
+  height: 100px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.links-class {
+  color: rgb(41, 190, 240);
+}
+
+.message-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 1px solid lightgrey;
+  min-width: 80%;
+}
+
+.message-board h2 {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+}
+
+.messages-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.messages-row > * {
+  margin: 0.5rem 1rem;
+}
+
+.input-area {
+  min-width: 80%;
+  padding: 1rem;
+  padding-bottom: 0;
+  display: flex;
+}
+
+#message-box {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#message-box:focus {
+  box-shadow: none;
+}
+
+#send-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-area {
+  display: flex;
+}
+
+.btn-area button {
+  margin: 0 0.75rem;
+}
+
+.toggling-image {
+  visibility: hidden;
+}
+
+footer {
+  margin-top: 2rem;
+}
